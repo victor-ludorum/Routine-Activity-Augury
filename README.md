@@ -10,6 +10,6 @@ whether the location of user is changed upto threshold(this threshold distance w
 changed that much then first it will ask the user to give whether it normal, semi-normal or rare/abnormal situation for him. This response is useful because in the machine 
 learning part we are actually doing supervised learning so that whenever any abnormalities occur then the app should predict it and it will inform the guardian So, we are collecting all the sensor data including the latitude and longitude of the present location so that we can track their location. In this way all the user data get collected all the way.These data are weekly send to the server . I have used PHPMyAdmin server for this where I am sending all data in the json format with the help of volley in android.
 
-Now the data is collected for the user and these data are used for predicting any abnormal situation of the user. Here, I have made clusters to each of the normal and semi-normal
+Now the data is collected for the user and these data are used for predicting any abnormal situation of the user. Here, I have used RNN with LSTM to each of the normal and semi-normal
 situations of the user and whenever any location with new values are received then that will calculate how much close it is with the normal , semi normal or any rare/abnormal situation.
 And if the prediction is an abnormal situation then the guardian will be notified so that he may take proper action regarding it.

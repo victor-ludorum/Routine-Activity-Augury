@@ -4,7 +4,7 @@
 In our country the crimes with women and children are increasing day by day.And the main reason behind this is guardians don't know whether their child 
 is in danger or not. So, to solve this problem I have created an app which tracks user activity and predicts any abnormalities if present in the user routine.
 In the very first the app will note down all the user details along with their guardian email id in the Sign up activity of app. Then, it will also note down the 
-most frequent places he or she will visit through map and we will store all these data. After this the main tracking activity starts, here we will start collecting 
+most frequent places he or she will visit through map and we will store all these data. Like if any user is residing in his house then his house is the place where he/she visit frequently. These places are collected first so that in training process these places are excluded. After this the main tracking activity starts, here we will start collecting 
 the users activity through the mobile sensors i.e. accelerometer,gyrometer,magnetometer etc.In android we call sensorService class which helps to collect all the 
 data of all the sensors present in . In the app I have maintained one JobScheduler Service which automatically calls in the background after every 15 minutes and check
 whether the location of user is changed upto threshold(this threshold distance we have made according to type of user as Child have less and adults have more). If it has
